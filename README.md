@@ -9,6 +9,22 @@ Split 3MF files by paint color/material into separate components.
 - Export as STL, OBJ, or PLY files
 - Command line and programmatic API
 
+### Visual Example
+
+In this example we use a Makerworld remix of
+- https://github.com/DrLex0/print3D-hinged-locked-treasure-chest
+- https://makerworld.com/en/models/910440-hinged-locked-treasure-chest#profileId-1490628
+
+![Multi-color 3MF Model](content/before.png)
+
+The Makerworld version is a .3mf painted in Bambu Studio
+Which is what we want.
+
+![Separated Components A](content/after1.png)
+![Separated Components B](content/after2.png)
+
+*The tool automatically detects paint colors in 3MF files and creates separate files for each color group, making it easy to print different parts in different colors or materials.*
+
 ## Installation
 
 ```bash
