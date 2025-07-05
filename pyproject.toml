@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "colorsplit"
+version = "0.1.0"
+description = "3MF Mesh Color-Based Splitting Tool with Paint Color Support"
+authors = [
+    {name = "Andras Mocsary", email = "your.email@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "trimesh>=3.9.0",
+    "numpy>=1.19.0",
+    "scipy>=1.5.0",
+    "matplotlib>=3.3.0",
+    "scikit-learn>=1.0.0",
+    "open3d>=0.16.0",
+    "lib3mf>=1.8.0",
+    "networkx>=3.5.0",
+    "lxml>=6.0.0",
+]
+
+[tool.pyre]
+version = "0.9.18"
+source_directories = ["."]
+search_path = ["."]
+typeshed = "typeshed"
+exclude = [
+    ".*/__pycache__",
+    ".*/output_*",
+    ".*/Hinged-Locked-Chest_MultiColor",
+]
+
+[tool.pyre.strict]
+enabled = true
+
+[tool.pyrefly]
+project-includes = ["**/*"]
+project-excludes = ['**/*venv/**\*']
+
+ 
